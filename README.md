@@ -7,7 +7,7 @@
 1. User is able to search for different Pokemons via the input field.
 2. Once the button is clicked, the data for the requested pokemon to display in your card is fetched. If the input field has no entry, but the button was already clicked, the user will be informed about it.
 
-Check out live working demo here:
+Check out live working demo here: https://satyajit06.github.io/pokemon-api/
 
 ---
 
