@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #513a10;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+form input:focus {
+  outline: none !important;
+  border-color: #f89700;
+}
+
+form button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #f89700;
+  color: white;
+}
+
+.container {
+  display: none;
+  width: 45%;
+  height: fit-content;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f6d26d;
+  border-radius: 10px;
+}
+
+.pokemon-name {
+  letter-spacing: 3px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 9rem;
+  margin: 1.5rem auto;
+  border-radius: 50%;
+  border: 7px solid white;
+}
+
+img {
+  width: 60%;
+}
+
+#stats,
+#abilities {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: larger;
+  font-weight: bold;
+  margin: 1.5rem auto;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: white;
+  text-underline-offset: 5px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0px 0px;
+
+  width: 70%;
+  margin: auto;
+
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hp hp-value"
+    "attack attack-value"
+    "defense defense-value"
+    "special-attack special-attack-value"
+    "special-defense special-defense-value"
+    "speed speed-value";
+}
+
+.hp {
+  grid-area: hp;
+}
+.hp-value {
+  grid-area: hp-value;
+}
+.attack {
+  grid-area: attack;
+}
+.attack-value {
+  grid-area: attack-value;
+}
+.defense {
+  grid-area: defense;
+}
+.defense-value {
+  grid-area: defense-value;
+}
+.special-attack {
+  grid-area: special-attack;
+}
+.special-attack-value {
+  grid-area: special-attack-value;
+}
+.special-defense {
+  grid-area: special-defense;
+}
+.special-defense-value {
+  grid-area: special-defense-value;
+}
+.speed {
+  grid-area: speed;
+}
+.speed-value {
+  grid-area: speed-value;
+}
+
+.abilities-container {
+  text-align: center;
+}
